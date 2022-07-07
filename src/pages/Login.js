@@ -1,18 +1,21 @@
-import '../css/login.css';
-import { Button, Card, Input,Form,Radio, Layout, Col, Row} from 'antd';
-import { Link } from 'react-router-dom';
-import { Content } from 'antd/lib/layout/layout';
+import '../css/Login.css';
+import { Button, Card, Input,Form,Radio, Space } from 'antd';
+import { Link, useNavigate } from 'react-router-dom';
+
+
 
 export const Login = () => {
+  
   const [form] = Form.useForm();
+  const navigate = useNavigate();
+
   return (
     <div className="container">
       <div className="left">
         <img className="logo" src="./scgc-logo.png" alt="LOGO-SCGC"/>
         <h2>Welcome!</h2>
         <p>Enter your personai details<br />and start journey with us</p>
-          <Button ghost >Sign up</Button>
-        <div className="wave"></div>
+        <Button ghost onClick={() => navigate('./Register')} >Sign up</Button>
       </div>
       <div className="right">
         <Card className="card">
@@ -30,6 +33,7 @@ export const Login = () => {
                 rules={[
                   {
                     required: true,
+                    message: 'Please input your username!',
                   },
                 ]}
               >
@@ -48,10 +52,10 @@ export const Login = () => {
               >
                 <Input.Password />
               </Form.Item>
-              <div className="signin-detail">
+              <Space size={68} className="position">
                 <Radio className="radio">Remember me</Radio>
-                <Link className="link" to="/Signup">Forget password?</Link>
-              </div>
+                <Link className="link" to="/">Forget password?</Link>
+              </Space>
               <Form.Item>
                 <Button type="primary" htmlType="submit">
                   Sign in
@@ -60,8 +64,7 @@ export const Login = () => {
             </Form>
           </div>
           <hr className='position-hr' />
-          <Button className="btn"><img className="btn-image" src="./scgc-logo.png" alt="Submit"/></Button>
-          <Button className="btn"><img className="btn-image" src="./scgc-logo.png" alt="Submit"/></Button>
+          <Button className="btn" onClick={() => navigate('/')}><img className="btn-image" src="./scgc-logo.png" alt="Submit"/></Button><br />
           <div className="signin-detail">
             <p className="text" >Don't have a account, </p>
             <Link className="link" to="/">Sign up</Link>

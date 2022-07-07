@@ -9,11 +9,9 @@
   width: 37%;
   height: 100%;
   background-image: url(../../public/bg-left.png);
-  /* background-repeat:no-repeat; */
   background-size: cover;
   background-repeat: no-repeat;
   left: 0;
-  z-index: -1;
 }
 
 .right {
@@ -88,8 +86,8 @@
   color: #444B59;
 }
 
-.right .signin-detail {
-  display: inline-flex;
+.right .position {
+  margin: 0 0 2% 0;
 }
 
 .right .radio {
@@ -132,7 +130,7 @@
   background: #FFFFFF;
   border: 1px solid #009989;
   border-radius: 5px;
-  margin: 0 4% 4%;
+  margin: 0 0 4%;
 }
 
 .right .btn-image {
@@ -149,9 +147,6 @@
   letter-spacing: 0.1em;
   color: #444B59;
 }
-
-/* Text between <hr> tag */
-
 
 .right hr {
   padding: 0;
@@ -179,11 +174,15 @@
   background: #F1FFFE;
 }
 
+.right .signin-detail {
+  display: inline-flex;
+}
+
 @media screen and (min-width: 1920px ){
 
   .left .logo {
     width: 32%;
-    margin: 42% 0 8%;
+    margin: 36% 0 8%;
   }
   
   .left h2 {
@@ -204,7 +203,7 @@
   .right h2 {
     font-size: 36px;
     line-height: 42px;
-    margin: 8% 0 8% 0;
+    margin: 8% 0;
   }
   
   .right Form label {
@@ -235,7 +234,7 @@
   .right .btn {
     width: 28%;
     height: fit-content;
-    margin: 0 6% 6%;
+    margin: 0 0 6%;
   }
   
   
@@ -246,6 +245,7 @@
 
   .right hr {
     margin: 8% auto;
+    background-color: #C8D3F9;
     border: 2px solid #C8D3F9;
   }
   .right hr:after {
@@ -310,7 +310,7 @@
   .right .btn {
     width: 28%;
     height: fit-content;
-    margin: 0 6% 6%;
+    margin: 0 0 6%;
   }
   
   
@@ -329,82 +329,8 @@
   }
 }
 
-@media screen and (max-width: 1680px ) {
-  /* .left .logo {
-    width: 32%;
-    margin: 36% 0 16%;
-  }
-  
-  .left h2 {
-    font-size: 48px;
-  }
-  
-  .left p {
-    font-size: 24px;
-    line-height: 32px;
-  }
-  
-  .left Button {
-    font-size: 24px;
-    height: fit-content;
-  }
+/* @media screen and (max-width: 1680px ) {
 
-  
-  .right h2 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.1em;
-    margin: 8% 0 8% 0;
-  }
-  
-  .right Form label {
-    font-size: 20px;
-  }
-  
-  .right Form Input {
-    font-size: 20px;
-  }
-  
-  .right .radio {
-    font-size: 24px;
-    line-height: 24px;
-  }
-  
-  .right .link {
-    font-size: 24px;
-    line-height: 24px;
-  }
-  
-  .right Button {
-    height: fit-content;
-    font-size: 24px;
-    line-height: 24px;
-    padding: 2%;
-  }
-  
-  .right .btn {
-    width: 28%;
-    height: fit-content;
-    margin: 0 6% 6%;
-  }
-  
-  
-  .right .text {
-    font-size: 24px;
-    line-height: 24px;
-  }
-
-  .right hr {
-    margin: 8% auto;
-    border: 2px solid #C8D3F9;
-  }
-  .right hr:after {
-    font-size: 24px;
-    line-height: 24px;
-  } */
 }
 
 @media screen and (max-width: 1199px ) {
@@ -429,4 +355,4 @@
 
 @media screen and (max-width: 570px){
 
-}
+} */
